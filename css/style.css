@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+ .box img{
+width: 100%;
+}
+.box{
+  
+    position: relative;
+   overflow: hidden;
+}
+.text{
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    transform: translatey(200%);
+    transition: all 0.5s;
+}
+.box:hover .text{
+    transform: translatey(0);
+}
+button{
+    padding: 8px 30px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    font-weight: bold;
+    border: 3px solid transparent;
+}
+.btn{
+    background-color: gray;
+}
+.box:hover .image{
+    filter: grayscale(100%);
+}
+.box:hover .opacity{
+    opacity: 0.5;
+}
+.box:hover .blur{
+    filter: blur(4px);
+}
+.box:hover .drop-shadow {
+    filter: brightness(200%);
+}
